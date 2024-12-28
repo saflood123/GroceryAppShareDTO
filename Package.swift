@@ -4,5 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "GroceryAppShareDTO"
+    name: "GroceryAppShareDTO",
+    products: [.library(
+            name: "GroceryAppShareDTO",
+            targets:["GroceryAppShareDTO"]),
+               ],
+    dependencies: [],
+    targets: [.target(
+        name: "GroceryAppShareDTO",
+        dependencies: []),
+               ]
 )
