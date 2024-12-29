@@ -8,9 +8,9 @@
 import Foundation
 
 public struct GroceryItemRequestDTO: Codable {
-    public var title: String
-    public var quantity: Int
-    public var price: Double
+    public let title: String
+    public let quantity: Int
+    public let price: Double
     
     public init(title: String, quantity: Int, price: Double) {
         self.title = title
