@@ -8,13 +8,16 @@
 import Foundation
 
 public struct GroceryItemRequestDTO: Codable {
+    public let id: UUID
     public let title: String
-    public let quantity: Int
     public let price: Double
+    public let quantity: Int
+
     
-    public init(title: String, quantity: Int, price: Double) {
+    public init(id: UUID, title: String, price: Double, quantity: Int) {
+        self.id = id
         self.title = title
-        self.quantity = quantity
         self.price = price
+        self.quantity = quantity
     }
 }
