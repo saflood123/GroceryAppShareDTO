@@ -9,15 +9,16 @@ import Foundation
 
 public struct ExerciseRequestDTO: Codable {
    // public let id: UUID
-    public let name: String
+    public let gender: String
     
-    public let set: Int
-
+    public let age: Int
+    public let weight: Float
     
-    public init(name: String,  set: Int) {
+    public init(gender: String, age:Int,  weight: Float) {
        // self.id = id
-        self.name = name
+        self.gender = gender
       
-        self.set = set
+        self.age = age
+        self.weight = weight
     }
 }
