@@ -6,7 +6,7 @@
 //
 import Foundation
 
-public struct GroceryItemResponseDTO: Codable {
+public struct GroceryItem2ResponseDTO: Codable {
     public let id: UUID
     public let title: String
     public let price: Double
@@ -17,5 +17,5 @@ public struct GroceryItemResponseDTO: Codable {
         self.title = title
         self.price = price
         self.quantity = quantity
-    }/Users/stuartflood/Desktop/grocery-app-server/Sources/App/Extensions/GroceryItemResponseDTO+Extensions.swift
+    }
 }
