@@ -11,11 +11,13 @@ public struct GroceryItem2ResponseDTO: Codable {
     public let title: String
     public let price: Double
     public let quantity: Int
+    public let dateofbirth: Date
     
-    public init(id: UUID, title: String,price: Double, quantity: Int) {
+    public init(id: UUID, title: String,price: Double, quantity: Int, dateofbirth: Date) {
         self.id = id
         self.title = title
         self.price = price
         self.quantity = quantity
+        self.dateofbirth = dateofbirth
     }
 }
