@@ -18,7 +18,7 @@ public struct GroceryItem2RequestDTO: Codable {
     public let date_updated: String
 
     
-    public init(title: String, price: Double, quantity: Int, calories: Int,steps: Int,dateofbirth: String, date_updated: String) {
+    public init(title: String, price: Double, quantity: Int, calories: Int,steps: Int, dateofbirth: String, date_updated: String) {
        // self.id = id
         self.title = title
         self.price = price
