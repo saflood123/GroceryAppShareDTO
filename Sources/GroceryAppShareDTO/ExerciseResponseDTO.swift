@@ -10,9 +10,9 @@ public struct ExerciseResponseDTO: Codable {
     public let id: UUID
     public let gender: String
     public let age: Int
-    public let weight: Float
+    public let weight: Int
     
-    public init(id: UUID, gender: String,age: Int, weight: Float) {
+    public init(id: UUID, gender: String,age: Int, weight: Int) {
         self.id = id
         self.gender = gender
       
