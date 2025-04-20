@@ -11,17 +11,19 @@ public struct GroceryItem3ResponseDTO: Codable {
     public let title: String
     public let price: Double
     public let quantity: Int
+    public let foodtype: String
 //    public let calories: Int
    // public let steps: Int
  //   public let dateofbirth: String
 //    public let date_updated: String
     
-    public init(id: UUID, title: String,price: Double, quantity: Int) {
+    public init(id: UUID, title: String,price: Double, quantity: Int, foodtype: String) {
         //, calories: Int,steps: Int, dateofbirth: String, date_updated: String
         self.id = id
         self.title = title
         self.price = price
         self.quantity = quantity
+        self.foodtype = foodtype
   //      self.calories = calories
  //       self.steps = steps
  //       self.dateofbirth = dateofbirth
